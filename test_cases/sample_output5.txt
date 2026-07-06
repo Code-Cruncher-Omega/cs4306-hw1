@@ -2,7 +2,6 @@ CS4306 Assignment 1
 Paste input, then press Ctrl+Z then Enter on Windows:
 
 Matching:
-MERCY, JOSEPH
-CITY, DARRIUS
+MERCY, DARRIUS
 
 Matching is STABLE.

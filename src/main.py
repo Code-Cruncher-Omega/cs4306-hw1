@@ -1,5 +1,6 @@
 from parser import parse_input
 from matching import match_residents
+from stability import check_matching, print_report
 import sys
 
 
@@ -16,6 +17,10 @@ def main():
     print("\nMatching:")
     for hospital, assigned_residents in matches.items():
         print(hospital + ", " + ", ".join(assigned_residents))
+    
+    report = check_matching(hospitals, residents, matches)
+    print()
+    print_report(report)
 
 
 if __name__ == "__main__":

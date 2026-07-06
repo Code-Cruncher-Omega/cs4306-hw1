@@ -23,6 +23,12 @@ def match_residents(hospitals, residents):
 
         hospital = residents[current_resident]["prefs"][next_choice[current_resident]]
         next_choice[current_resident] = next_choice[current_resident] + 1
+
+        # skip mutually unacceptable pairs instead of crashing
+        if current_resident not in hospitals[hospital]["rank"]:
+            free_residents.append(current_resident)
+            continue
+            
         matches[hospital].append(current_resident)
 
         slots = hospitals[hospital]["slots"]

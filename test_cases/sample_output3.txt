@@ -3,6 +3,6 @@ Paste input, then press Ctrl+Z then Enter on Windows:
 
 Matching:
 MERCY, JOSEPH
-CITY, DARRIUS
+CITY, DARRIUS, ARTHUR
 
 Matching is STABLE.
